@@ -39,6 +39,87 @@
 
             <p id="subtitle">Une date, une salle, une idée ? Racontez-nous. Nous revenons vers vous sous 48heures.</p>
         </section>
+
+        <section id="form-section">
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Formulaire de contact : </legend>
+                    <input type="hidden" name="test-bot">
+                    
+                    <label>
+                        Votre nom<br>
+                        <input type="text" name="name" placeholder="Jean ou Bernard">
+                    </label>
+
+                    <label>
+                        Votre e-mail<br>
+                        <input type="email" name="mail" placeholder="Jean-Jacques@Bernards.be">
+                    </label>
+                        
+                    <label>
+                        Téléphone<br>
+                        <input type="tel" name="phone" placeholder="+32 4&bull;&bull; &bull;&bull; &bull;&bull; &bull;&bull;">
+                    </label>
+
+                    <label for="">Type d'évènement<br>
+                        <select name="formula" id="">
+                            <option value="private-concert" selected="selected">
+                                Concert privé
+                            </option>
+                            <option value="festival">
+                                Festival & scène
+                            </option>
+                            <option value="acoustic">
+                                Set acoustique
+                            </option>
+                        </select>
+                    </label>
+                    
+                    <label>
+                        Votre message<br>
+                        <textarea name="message" rows="5" placeholder="La date, le lieu, l'ambiance imaginée..."></textarea>
+                    </label>
+
+                    <input type="checkbox" name="data-acceptation" unchecked="">
+                    <label for="data-acceptation" id="data-acceptation">
+                        J'accepte que mes données soient utilisées pour répondre à ma demande.
+                    </label>
+
+                    <input id="send-button" type="submit" value="Envoyer la demande &rarr;"></input>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="contact-informations">
+            <h2>En direct</h2>
+
+            <a href="mailto:booking@jjb.be" class="contact-fields">
+                <svg class="icon"></svg>
+
+                <div class="field-details">
+                    <small>E-mail</small>
+                    <p>booking@jjb.be</p>
+                </div>
+            </a>
+
+            <a href="tel:+32471234567" class="contact-fields">
+                <svg class="icon"></svg>
+                <div class="field-details">
+                    <small>Téléphone</small>
+                    <p>+32 471 23 45 67</p>
+                </div>
+            </a>
+
+            <div class="contact-fields">
+                <svg class="icon"></svg>
+                <div class="field-details">
+                    <small>Point de chute</small>
+                    <p>Rue Bignolle 42, 5020 Champion</p>
+                </div>
+            </div>
+
+            <img src="/images/map.jpg" alt="Carte montrant où se situe l'adresse de JJB">
+        </section>
     </main>
 
     <footer>
