@@ -110,34 +110,91 @@
              noté en commentaire parce qu'il est beau celui-là -->
              <div id="concert1">
                 <div class="concert-date">18/10/26</div>
+
                 <div class="concert-content">
                     <div class="concert-place">Ancienne Belgique &bull; Bruxelles</div>
+
                     <div class="concert-title">
                         <div class="concert-text">Nuit électrique</div>
-                        <button class="concert-arrow">&rarr;</button>
+
+                        <button class="concert-arrow" popovertarget="pot-concert-1" popovertargetaction="toggle">&rarr;</button>
                     </div>
+                </div>
+             </div>
+
+             <div id="pot-concert-1" popover="">
+                <div class="pot-concert-first-half"><button class="pot-close-button" popovertarget="pot-concert-1" popovertargetaction="hide">X</button></div>
+                
+                <div class="pot-second-half">
+                    <h3>18/10/26</h3>
+
+                    <h2>Nuit électrique</h2>
+
+                    <p>Ancienne Belgique &bull; Bruxelles<br></p>
+
+                    <p>Une salle pleine, des refrains repris au premier rang et un rappel qui s'est prolongé bien après l'heure prévue.</p>
+                    
+                    <a class="contact-button" href="/contact.html">Programmer le groupe &rarr;</a>
                 </div>
              </div>
 
              <div id="concert2">
                 <div class="concert-date">14/09/26</div>
+
                 <div class="concert-content">
                     <div class="concert-place">Fêtes de Wallonie &bull; Namur</div>
+
                     <div class="concert-title">
                         <div class="concert-text">Les Bernards en ville</div>
-                        <button class="concert-arrow">&rarr;</button>
+
+                        <button class="concert-arrow" popovertarget="pot-concert-2" popovertargetaction="toggle">&rarr;</button>
                     </div>
                 </div>
              </div>
 
+             <div id="pot-concert-2" popover="">
+                <div class="pot-concert-first-half"><button class="pot-close-button" popovertarget="pot-concert-2" popovertargetaction="hide">X</button></div>
+                
+                <div class="pot-second-half">
+                    <h3>14/09/26</h3>
+
+                    <h2>Les Bernards en ville</h2>
+
+                    <p>Fêtes de Wallonie &bull; Namur<br></p>
+
+                    <p>Une salle pleine, des refrains repris au premier rang et un rappel qui s'est prolongé bien après l'heure prévue.</p>
+                    
+                    <a class="contact-button" href="/contact.html">Programmer le groupe &rarr;</a>
+                </div>
+             </div>
+
              <div id="concert3">
-                <div class="concert-date">22/08/2026</div>
+                <div class="concert-date">22/08/26</div>
+
                 <div class="concert-content">
                     <div class="concert-place">Le Botanique &bull; Bruxelles</div>
-                    <div class="concert-title">
+
+                    <div class="concert-title">                        
                         <div class="concert-text">Session rouge</div>
-                        <button class="concert-arrow">&rarr;</button>
+
+                        <button class="concert-arrow" popovertarget="pot-concert-3" popovertargetaction="toggle">&rarr;</button>
                     </div>
+                </div>
+             </div>
+
+             <div id="pot-concert-3" popover="">
+                <div class="pot-concert-first-half"><button class="pot-close-button" popovertarget="pot-concert-3" popovertargetaction="hide">X</button></div>
+                
+                <div class="pot-second-half">
+                    <h3>22/08/26</h3>
+
+                    <h2>Les Bernards en ville</h2>
+
+                    <p>Le Botanique &bull; Bruxelles<br></p>
+
+                    <p>Une salle pleine, des refrains repris au premier rang et un rappel qui s'est prolongé bien après l'heure prévue.</p>
+                    
+                    <a class="contact-button" href="/contact.html">Programmer le groupe &rarr;</a>
                 </div>
              </div>
         </section>
@@ -149,8 +206,11 @@
 
             <div id="sample-content">
                 <h3>À écouter très fort</h3>
+
                 <h2>Le coeur en <em>stéréo</em></h2>
+
                 <p>Un extrait original pour mettre les enceintes à l'épreuve et les voisins dans l'ambiance.</p>
+                
                 <div id="player"></div>
             </div>
         </section>
