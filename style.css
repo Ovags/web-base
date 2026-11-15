@@ -1,4 +1,4 @@
-/*═║╔╗╚╝╠╣╦╩╬
+/*
 ╔═════════════════════════════════╗
 ║ Variables et paramètres globaux ║
 ╚═════════════════════════════════╝
@@ -26,17 +26,16 @@ body{
     padding: 0;
     display: block;
 }
-
-/*═║╔╗╚╝╠╣╦╩╬
+/*
 ╔═════════╗
 ║ En-tête ║
 ╚═════════╝
 */
 
 header{
-    display: inline;
+    display: flex;
+    /* align-items: center; */
     height: var(--header-height);
-    width: 100%;
     background-color: var(--white);
 }
 
@@ -44,4 +43,3 @@ header{
     width: var(--header-logo-dimension);
     height: var(--header-logo-dimension);
 }
-
