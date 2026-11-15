@@ -1,0 +1,47 @@
+/*═║╔╗╚╝╠╣╦╩╬
+╔═════════════════════════════════╗
+║ Variables et paramètres globaux ║
+╚═════════════════════════════════╝
+*/
+:root{
+    /*Couleurs du logo*/
+    --red: #D20F11;
+    --pink: #DA024D;
+    --orange: #E66D22;
+    --yellow: #F3AD1E;
+    --green: #DA024D;
+    --blue: #039AE3;
+
+    --white: #F3F0E9;
+    --black: #080808;
+
+    --footer-bg-color: #111111;
+
+    --header-logo-dimension: 100px;
+    --header-height : 150px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+/*═║╔╗╚╝╠╣╦╩╬
+╔═════════╗
+║ En-tête ║
+╚═════════╝
+*/
+
+header{
+    display: inline;
+    height: var(--header-height);
+    width: 100%;
+    background-color: var(--white);
+}
+
+#logo-title img{
+    width: var(--header-logo-dimension);
+    height: var(--header-logo-dimension);
+}
+
