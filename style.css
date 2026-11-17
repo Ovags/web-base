@@ -206,6 +206,9 @@ nav a{
 ╔══════════════╗
 ║ Pied de page ║
 ╚══════════════╝
+    ┌─────────┐
+    │ Général │ 
+    └─────────┘
 */
 footer{
     background-color: var(--footer-bg-color);
@@ -223,7 +226,7 @@ footer em{
     align-items: center;
 }
 
-#footer-contact a, #footer-contact a:visited{
+#footer-contact-button, #footer-contact a:visited{
     background-color: var(--red);
     color: var(--white);
     text-transform: uppercase;
@@ -264,6 +267,41 @@ footer div ul{
 #links a, #links a:visited{
     color: var(--footer-light-grey);
     text-decoration: none;
+}
+
+/*
+───────────────────────────────────────────────────────────────────────────────
+    ┌──────────┐
+    │Smartphone│
+    └──────────┘
+*/
+@media (max-width: 767px){
+    #footer-contact{
+        flex-wrap: wrap;
+    }
+
+    #footer-contact-button{
+        margin-left: 0;
+    }
+
+    #footer{
+        display: inline;
+    }
+
+    #legal-mentions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 0;
+    }
+
+    footer div ul{
+        text-align: center;
+    }
+
+    #links{
+        margin-left: 0;
+    }
 }
 
 
