@@ -21,6 +21,7 @@
 
     --white: #FFF;
     --black: #080808;
+    --inactive-page: #5b5852;
 
     --footer-bg-color: #111111;
 
@@ -32,6 +33,7 @@
 
 html{
     font-family: 'Space Grotesk';
+    font-size: 0.9em;
 }
 
 body{
@@ -39,6 +41,20 @@ body{
     padding: 0;
     display: block;
 }
+
+/*
+╔═════════╗
+║ Général ║
+╚═════════╝
+*/
+h1, h2, h3{
+    text-transform: uppercase;
+}
+
+ul li{
+    list-style: none;
+}
+
 /*
 ╔═════════╗
 ║ En-tête ║
@@ -48,20 +64,21 @@ body{
 header{
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    column-gap: 0.5rem;
     height: var(--header-height);
     background-color: var(--white);
+    font-size: 0.8em;
+}
+
+header h2{
+    font-size: 1.2em;
 }
 
 header nav ul{
     display: flex;
-    list-style: none;
     gap: 15px;
     padding: 0 1rem 0 1rem;
-}
-
-h1, h2, h3{
-    text-transform: uppercase;
+    margin: 0;
 }
 
 #logo-title img{
@@ -71,6 +88,30 @@ h1, h2, h3{
 
 #menu-toggle, #burger{
     display: none;
+}
+
+nav{    
+    margin-left: auto;
+}
+
+nav a{
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--inactive-page);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#this-page a, #this-page a:visited{
+    color: var(--black);
+    border-bottom: solid 2px var(--red);
+}
+
+#book-us a{
+    background-color: var(--black);
+    color: white;
+    padding: 1rem;
 }
 
 /*
@@ -117,7 +158,11 @@ h1, h2, h3{
     }
 
     #this-page{        
-        border-bottom: solid 1px var(--pink);
+        border-bottom: var(--red);
+    }
+
+    #this-page a, #this-page a:visited{
+        color: var(--yellow);
     }
 
     header{
@@ -138,6 +183,11 @@ h1, h2, h3{
         left: 0;
         right: 0;
         background: var(--black);
+    }
+
+    #book-us a{
+        color: var(--white);
+        padding: 0;
     }
 }
 
