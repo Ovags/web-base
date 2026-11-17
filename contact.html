@@ -14,18 +14,23 @@
     <header>
         <div id="logo-title">
             <img src="images/logo.svg" alt="logo de JEAN-JACQUES & LES BERNARDS" id="header-logo">
-            <h2>JEAN-JACQUES & LES BERNARDS</h2>
+        </div>
+            <h2>JEAN-JACQUES <br> 
+                & LES BERNARDS</h2>
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="burger" aria-label="Menu"></label>
+
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="about.html">Le groupe</a></li>
                     <li><a href="gallery.html">Concerts</a></li>
                     <li><a href="services.html">Prestations</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html">Nous programmer</a></li>
+                    <li id="this-page"><a href="contact.html">Contact</a></li>
+                    <li id="book-us"><a href="contact.html">Nous programmer</a></li>
                 </ul>
-            </nav>
-        </div>
+            </nav>    
     </header>
 
     <main>
@@ -48,20 +53,20 @@
                     
                     <label>
                         Votre nom<br>
-                        <input type="text" name="name" placeholder="Jean ou Bernard">
+                        <input type="text" name="name" placeholder="Jean-Jacques ou Bernard" autocomplete="name">
                     </label>
 
                     <label>
                         Votre e-mail<br>
-                        <input type="email" name="mail" placeholder="Jean-Jacques@Bernards.be">
+                        <input type="email" name="mail" placeholder="Jean-Jacques@Bernards.be" autocomplete="email">
                     </label>
                         
                     <label>
                         Téléphone<br>
-                        <input type="tel" name="phone" placeholder="+32 4&bull;&bull; &bull;&bull; &bull;&bull; &bull;&bull;">
+                        <input type="tel" name="phone" placeholder="+32 4&bull;&bull; &bull;&bull; &bull;&bull; &bull;&bull;" autocomplete="tel">
                     </label>
 
-                    <label for="">Type d'évènement<br>
+                    <label>Type d'évènement<br>
                         <select name="formula" id="">
                             <option value="private-concert" selected="selected">
                                 Concert privé
@@ -80,8 +85,8 @@
                         <textarea name="message" rows="5" placeholder="La date, le lieu, l'ambiance imaginée..."></textarea>
                     </label>
 
-                    <input type="checkbox" name="data-acceptation" unchecked="">
-                    <label for="data-acceptation" id="data-acceptation">
+                    <input type="checkbox" id="data-acceptation" name="data-acceptation" required>
+                    <label for="data-acceptation">
                         J'accepte que mes données soient utilisées pour répondre à ma demande.
                     </label>
 
