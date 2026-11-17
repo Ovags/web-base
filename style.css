@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
 
 /*
+═══════════════════════════════════════════════════════════════════════════════
 ╔═════════════════════════════════╗
 ║ Variables et paramètres globaux ║
 ╚═════════════════════════════════╝
@@ -16,7 +17,7 @@
     --pink: #DA024D;
     --orange: #E66D22;
     --yellow: #F3AD1E;
-    --green: #DA024D;
+    --green: #A8CC2A;
     --blue: #039AE3;
 
     --white: #FFF;
@@ -24,9 +25,12 @@
     --inactive-page: #5b5852;
 
     --footer-bg-color: #111111;
+    --footer-light-grey: #777;
+    --footer-dark-grey: #3f3f3f;
 
-    --header-logo-dimension: 100px;
-    --header-height : 150px;
+    --header-logo-dimension: 75px;
+    --footer-logo-dimension: 150px;
+    --header-height : 100px;
 }
 
 
@@ -43,6 +47,7 @@ body{
 }
 
 /*
+═══════════════════════════════════════════════════════════════════════════════
 ╔═════════╗
 ║ Général ║
 ╚═════════╝
@@ -56,9 +61,13 @@ ul li{
 }
 
 /*
+═══════════════════════════════════════════════════════════════════════════════
 ╔═════════╗
 ║ En-tête ║
 ╚═════════╝
+    ┌─────────┐
+    │ Général │ 
+    └─────────┘
 */
 
 header{
@@ -110,11 +119,12 @@ nav a{
 
 #book-us a{
     background-color: var(--black);
-    color: white;
+    color: var(--white);
     padding: 1rem;
 }
 
 /*
+───────────────────────────────────────────────────────────────────────────────
     ┌──────────┐
     │Smartphone│
     └──────────┘
@@ -133,7 +143,7 @@ nav a{
         line-height: 1;
         cursor: pointer;
         background-color: var(--black);
-        color: white;
+        color: var(--white);
     }   
 
     #burger::before{
@@ -191,4 +201,71 @@ nav a{
     }
 }
 
-#sample-logo, #footer-contact img{display: none;}
+/*
+═══════════════════════════════════════════════════════════════════════════════
+╔══════════════╗
+║ Pied de page ║
+╚══════════════╝
+*/
+footer{
+    background-color: var(--footer-bg-color);
+    color: var(--white);
+}
+
+footer em{
+    color: var(--yellow);
+}
+
+#footer-contact{
+    padding: 3em;
+    column-gap: 3em;
+    display: flex;
+    align-items: center;
+}
+
+#footer-contact a, #footer-contact a:visited{
+    background-color: var(--red);
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 1rem;
+    margin-left: auto;
+}
+
+#footer-contact img{
+    width: var(--footer-logo-dimension);
+    height: var(--footer-logo-dimension);
+}
+
+#legal-mentions{
+    border-top: 1px solid var(--footer-dark-grey);
+    color: var(--footer-dark-grey);
+    padding-left: 3em;
+    padding-right: 3em;
+    font-size: 0.7em;
+}
+
+#legal-mentions, footer div ul {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+footer div ul{
+    padding: 0;
+}
+
+#links{
+    margin-left: auto;
+}
+
+#links a, #links a:visited{
+    color: var(--footer-light-grey);
+    text-decoration: none;
+}
+
+
+/*Le logo trolle, on le cache, on le redimensionnera après l'implémentation des header et footer*/
+#sample-logo{display: none;}
