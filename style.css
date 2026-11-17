@@ -277,7 +277,7 @@ footer div ul{
 */
 @media (max-width: 767px){
     #footer-contact{
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     #footer-contact-button{
