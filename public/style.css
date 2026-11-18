@@ -436,6 +436,21 @@ section h3{
     margin-top: 3em;
 } 
 
+#title-section-main{
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    height: 790px;
+    max-height: 960px;
+    display: flex;
+    position: relative;
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0.8)), url(images/hero-concert-B&W.jpg) left / cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 #title-section{
     align-items: center;
     background-color: var(--black);
