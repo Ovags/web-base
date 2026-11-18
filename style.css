@@ -460,6 +460,49 @@ section h3{
     color: var(--footer-dark-grey);
 }
 
+#vinyl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+@keyframes tourne {
+    from{rotate: 0deg;}
+    to{rotate: 360deg;}
+}
+
+.vinyl-circle{
+    background-color: var(--black);
+    padding: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgb(39, 39, 39);
+}
+
+#c1, #c8{
+    padding: 0.5em;
+}
+
+#c1{    
+    box-shadow: 10px 10px var(--red);
+    animation: tourne 8s linear infinite;
+}
+
+#vinyl-center{
+    background-color: var(--pink);
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Barlow Condensed';
+    font-weight: 900;
+    font-size: 1.5em;
+    line-height: 0.7;
+}
+
 /*
 ───────────────────────────────────────────────────────────────────────────────
     ┌──────────┐
