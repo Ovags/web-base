@@ -565,6 +565,10 @@ section h3{
     #introduction{
         flex-direction: column;
     }
+
+    #gallery-header{
+        flex-direction: column;
+    }
 }
 
 /*Le logo trolle, on le cache, on le redimensionnera après l'implémentation des header et footer*/
