@@ -837,7 +837,6 @@ audio::-webkit-media-controls-panel{
 
 #history #article-container{
     flex: 2;
-    border-right: solid 5px var(--red);
     padding-right: 3em;
 }
 
@@ -858,6 +857,7 @@ audio::-webkit-media-controls-panel{
     gap: 1em;
     margin: 0;
     padding: 2em;
+    border-left: solid 5px var(--red);
 }
 
 #history blockquote{
@@ -956,6 +956,16 @@ audio::-webkit-media-controls-panel{
 
     #about-photo-text #numbers{
         translate: 0 -1.15em;
+    }
+
+    #history{
+        flex-direction: column;
+    }
+
+    #history figure{
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 2em;
     }
 }
 
