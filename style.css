@@ -52,10 +52,13 @@ body{
 ║ Général ║
 ╚═════════╝
 */
-h1, h2, h3{
-    text-transform: uppercase;
+h1, h2{
     font-family: 'Barlow Condensed';
     font-weight: 900;
+}
+
+h1, h2, h3{    
+    text-transform: uppercase;
 }
 
 ul li{
@@ -116,7 +119,7 @@ nav a{
     padding-bottom: 0.5rem;
 }
 
-#this-page a, #this-page a:visited, a:hover{
+#this-page a, #this-page a:visited, nav ul li a:hover{
     color: var(--black);
     border-bottom: solid 2px var(--red);
     transition: 0.2s ease;
@@ -332,8 +335,27 @@ h1{
     font-size: 5em;
 }
 
+section h3{
+    font-size: 0.8em;
+    color: var(--white);
+}
+
+#subtitle{
+
+} 
+
 #title-section{
+    align-items: center;
     background-color: var(--black);
+    height: 790px;
+    max-height: 960px;
+    display: flex;
+    position: relative;
+}
+
+#title-container{
+    display: flex;
+    flex-direction: column;
 }
 
 /*
