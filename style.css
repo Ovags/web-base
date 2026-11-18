@@ -673,6 +673,37 @@ section h3{
     background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5)), url(images/session-rouge-compressed.jpg) bottom / cover;
 }
 
+#sample-content h3{
+    color: var(--footer-dark-grey);
+}
+
+#sample-content p{
+    margin-bottom: 0;
+    padding-bottom: 3em;
+}
+
+#player{
+    padding-top: 3em;
+    border-top: solid 1px var(--black);
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#audio-sample{
+    background-color: var(--yellow);
+}
+
+audio{
+    border-radius: 22px;
+    background-color: var(--yellow);
+    box-shadow: 0 0px 12px var(--white);
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: var(--yellow);
+}
+
 /*
 ───────────────────────────────────────────────────────────────────────────────
     ┌──────────┐
@@ -716,6 +747,10 @@ section h3{
     }
 
     #concerts{
+        flex-direction: column;
+    }
+
+    #player{
         flex-direction: column;
     }
 }
