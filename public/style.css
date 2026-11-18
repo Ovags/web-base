@@ -75,6 +75,7 @@ ul li{
 }
 
 .red-button, .red-button a:visited{
+    display: inline-block;
     background-color: var(--red);
     color: var(--white);
     text-transform: uppercase;
@@ -673,6 +674,66 @@ section h3{
     background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5)), url(images/session-rouge-compressed.jpg) bottom / cover;
 }
 
+#pot-concert-1,
+#pot-concert-2,
+#pot-concert-3{
+    border: none;
+    background-color: var(--black);
+    padding: 0px;
+    color: var(--white);
+    box-shadow: 0 0 5px var(--white);
+}
+
+#pot-concert-1:popover-open,
+#pot-concert-2:popover-open,
+#pot-concert-3:popover-open{
+    display: flex;
+}
+
+.pot-concert-first-half{
+    flex: 1;
+    height: 400px;
+}
+
+.pot-second-half{
+    flex: 1;
+}
+
+.pot-close-button{
+    background-color: var(--red);
+    color: var(--white);
+    font-family: 'Space Grotesk';
+    font-weight: 900;
+    padding: 1em;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
+.pot-concert-first-half, .pot-second-half{
+    padding: 1em;
+}
+
+#pot-concert-1 .pot-concert-first-half,
+#pot-concert-2 .pot-concert-first-half,
+#pot-concert-3 .pot-concert-first-half{
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+#pot-concert-1 .pot-concert-first-half{
+    background-image: url(images/nuit-électrique-compressed.jpg);
+}
+
+#pot-concert-2 .pot-concert-first-half{
+    background-image: url(images/les-bernards-en-ville-compressed.jpg);
+}
+
+#pot-concert-3 .pot-concert-first-half{
+    background-image: url(images/session-rouge-compressed.jpg);
+}
+
 #sample-content h3{
     color: var(--footer-dark-grey);
 }
@@ -748,6 +809,18 @@ audio::-webkit-media-controls-panel{
 
     #concerts{
         flex-direction: column;
+    }
+
+    #pot-concert-1:popover-open,
+    #pot-concert-2:popover-open,
+    #pot-concert-3:popover-open{
+        flex-direction: column;
+    }
+
+    #pot-concert-1,
+    #pot-concert-2,
+    #pot-concert-3{
+        height: 600px;
     }
 
     #player{
