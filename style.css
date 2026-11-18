@@ -434,6 +434,10 @@ section h3{
         padding-right: 1em;
     }
 
+    #buttons{
+        margin-bottom: 2em;
+    }
+
     #concert-sticker{        
         width: 100px;
         height: 100px;
