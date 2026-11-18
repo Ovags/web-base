@@ -347,19 +347,25 @@ footer div ul{
 */
 
 section{
-    padding-left: 5em;
-    padding-right: 5em;
+    padding: 5em;
 }
 
 h1{
-    line-height: 0.72;
     color: var(--white);
     font-size: 7em;
+    line-height: 0.72;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
 }
 
-h1 em{
+h2{
+    font-size: 4em;
+    line-height: 0.75;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+h1 em, h2 em{
     color: var(--red);
 }
 
@@ -384,6 +390,8 @@ section h3{
     background: linear-gradient(to right, black, rgba(0, 0, 0, 0.8)), url(images/hero-concert-B&W.jpg) left / cover;
     background-position: right;
     background-repeat: no-repeat;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 #title-section h3::before{
@@ -422,6 +430,10 @@ section h3{
     line-height: 0.8;
 }
 
+#introduction h3{
+    color: var(--footer-dark-grey);
+}
+
 /*
 ───────────────────────────────────────────────────────────────────────────────
     ┌──────────┐
@@ -430,8 +442,7 @@ section h3{
 */
 @media (max-width: 767px){
     section{
-        padding-left: 1em;
-        padding-right: 1em;
+        padding: 1em;
     }
 
     #buttons{
