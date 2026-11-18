@@ -54,6 +54,8 @@ body{
 */
 h1, h2, h3{
     text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    font-weight: 900;
 }
 
 ul li{
@@ -77,6 +79,8 @@ header{
     height: var(--header-height);
     background-color: var(--white);
     font-size: 0.8em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 header h2{
@@ -181,6 +185,8 @@ nav a{
         align-items: center;
         height: auto;
         min-height: 100px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     #logo-title{
