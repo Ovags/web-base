@@ -878,6 +878,47 @@ audio::-webkit-media-controls-panel{
     content: "──\00A0\00A0\00A0";
 }
 
+#values ol{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: decimal-leading-zero;
+}
+
+#values li{
+    padding: 3em;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    font-family: 'Barlow Condensed';
+    color: var(--red);
+    font-weight: 900;
+}
+
+#values .value-title{
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+}
+
+.value-title{
+    color: var(--black);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.value-description{    
+    font-family: 'Space Grotesk';
+    color: var(--footer-dark-grey);
+    font-weight: 100;
+}
+
+#values #second{
+    border: solid 1px #ccc;
+}
+
+
+
 /*
 ───────────────────────────────────────────────────────────────────────────────
     ┌──────────┐
@@ -966,6 +1007,14 @@ audio::-webkit-media-controls-panel{
         padding-top: 0;
         padding-bottom: 0;
         margin-top: 2em;
+    }
+
+    #values ol{
+        flex-direction: column;
+    }
+
+    #values #second{
+        border: none;
     }
 }
 
