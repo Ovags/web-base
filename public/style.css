@@ -197,7 +197,12 @@ nav a{
     color: var(--inactive-page);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    display: inline-block;
+}
+
+header nav li{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
 }
 
 #this-page a, #this-page a:visited, nav ul li a:hover{
