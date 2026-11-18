@@ -1,6 +1,9 @@
 # The Docker image that will be used to build your app
 image: alpine:latest
+
 create-pages:
+  script:
+    - echo "Déploiement du site"
   pages:
     # The folder that contains the files to be exposed at the Page URL
     publish: public
