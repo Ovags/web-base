@@ -452,21 +452,25 @@ section h3{
 }
 
 #title-section{
-    align-items: center;
+    align-items: flex-start;
     background-color: var(--black);
     color: var(--white);
-    height: 790px;
-    max-height: 960px;
     display: flex;
+    flex-direction: column;
     position: relative;
-    background: linear-gradient(to right, black, rgba(0, 0, 0, 0.8)), url(images/hero-concert-B&W.jpg) left / cover;
     background-position: right;
     background-repeat: no-repeat;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
-#title-section h3::before{
+#title-section p{
+    font-weight: 100;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+#title-section h3::before, #title-section-main h3::before{
     content: "──\00A0\00A0\00A0";
     font-weight: 900;
     color: var(--red);
@@ -785,6 +789,39 @@ audio::-webkit-media-controls-panel{
     background-color: var(--yellow);
 }
 
+#about-photo{
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+#about-photo img{
+    display: block;
+    translate: 0 -8rem;
+    height: auto;
+    width: 80%;
+    filter: grayscale(100%);
+}
+
+#about-photo-text{
+    translate: 0 -6rem;
+    width: 80%;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+
+#about-photo-text #numbers{
+    font-family: 'Barlow Condensed';
+    font-size: 6em;
+    font-weight: 900;
+    color: var(--yellow);
+    translate: 0 -1em;
+}
+
 /*
 ───────────────────────────────────────────────────────────────────────────────
     ┌──────────┐
@@ -845,6 +882,20 @@ audio::-webkit-media-controls-panel{
 
     #player{
         flex-direction: column;
+    }
+
+    #about-photo img{
+        translate: 0 -4rem;
+        width: 95%;
+    }
+
+    #about-photo-text{
+        width: 97%;
+        translate: 0 -1em;
+    }
+
+    #about-photo-text #numbers{
+        translate: 0 -1.15em;
     }
 }
 
