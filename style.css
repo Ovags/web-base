@@ -384,7 +384,6 @@ section h3{
     background: linear-gradient(to right, black, rgba(0, 0, 0, 0.8)), url(images/hero-concert-B&W.jpg) left / cover;
     background-position: right;
     background-repeat: no-repeat;
-
 }
 
 #title-section h3::before{
@@ -398,6 +397,31 @@ section h3{
     flex-direction: column;
 }
 
+#concert-sticker{
+    background-color: var(--yellow);
+    color: var(--black);
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.7em;
+    border-radius: 50%;
+    transform: rotate(10deg);
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.2rem;
+}
+
+#concert-sticker strong{
+    font-family: 'Barlow Condensed';
+    font-size: 3em;
+    line-height: 0.8;
+}
+
 /*
 ───────────────────────────────────────────────────────────────────────────────
     ┌──────────┐
@@ -408,6 +432,11 @@ section h3{
     section{
         padding-left: 1em;
         padding-right: 1em;
+    }
+
+    #concert-sticker{        
+        width: 100px;
+        height: 100px;
     }
 }
 
