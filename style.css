@@ -99,7 +99,7 @@ ul li{
 }
 
 .transparent-on-white-button, .transparent-on-white-button a:visited{
-    color: var(--black);
+    color: var(--white);
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 500;
@@ -108,7 +108,7 @@ ul li{
     padding-left: 0;
     padding-right: 0;
     margin-left: auto;
-    border-bottom: solid 1px var(--black);
+    border-bottom: solid 1px var(--white);
 }
 
 .transparent-on-black-button, .transparent-on-black-button a:visited{
@@ -385,7 +385,7 @@ h1{
 }
 
 h2{
-    font-size: 4em;
+    font-size: 6em;
     line-height: 0.75;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -456,8 +456,16 @@ section h3{
     line-height: 0.8;
 }
 
+#introduction{
+    display: flex;
+}
+
 #introduction h3{
     color: var(--footer-dark-grey);
+}
+
+#text-block p{
+    max-width: 560px;
 }
 
 #vinyl{
@@ -465,6 +473,8 @@ section h3{
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes tourne {
@@ -474,7 +484,7 @@ section h3{
 
 .vinyl-circle{
     background-color: var(--black);
-    padding: 0.7em;
+    padding: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -487,20 +497,33 @@ section h3{
 }
 
 #c1{    
-    box-shadow: 10px 10px var(--red);
+    box-shadow: 8px 8px 5px var(--footer-dark-grey);
     animation: tourne 8s linear infinite;
 }
 
 #vinyl-center{
-    background-color: var(--pink);
+    background-color: var(--footer-light-grey);
     color: var(--white);
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     text-align: center;
     font-family: 'Barlow Condensed';
     font-weight: 900;
     font-size: 1.5em;
     line-height: 0.7;
+}
+
+#vinyl-center img{
+    height: 65px;
+    width: 65px;
+}
+
+#gallery{
+    background-color: var(--black);
+}
+
+#gallery{
+    color: var(--white);
 }
 
 /*
@@ -521,6 +544,10 @@ section h3{
     #concert-sticker{        
         width: 100px;
         height: 100px;
+    }
+
+    #introduction{
+        flex-direction: column;
     }
 }
 
