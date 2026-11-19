@@ -917,6 +917,27 @@ audio::-webkit-media-controls-panel{
     border: solid 1px #ccc;
 }
 
+#lives{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+.live-card{
+    border: solid 1px black;
+}
+
+#lc1, #lc6{
+    grid-column: span 2;
+}
+
+#lc3, #lc4{
+    grid-column: span 3;
+}
+
+#lc2, #lc5{
+    grid-column: span 4;
+}
 
 
 /*
