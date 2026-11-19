@@ -956,20 +956,60 @@ audio::-webkit-media-controls-panel{
 }
 
 .live-card{
-    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    height: 400px;background-size: cover;
+    background-position: center; 
+    transition: all 0.5s ease;   
+    filter: grayscale(100%);
 }
 
-#lc1, #lc6{
-    grid-column: span 2;
+.live-card:hover{
+    filter: grayscale(0%);
+    scale: 1.02;
 }
 
-#lc3, #lc4{
-    grid-column: span 3;
+.live-card .concert-place,
+.live-card .concert-title{
+    color: var(--white);
 }
 
-#lc2, #lc5{
-    grid-column: span 4;
+#lc1, #lc6{grid-column: span 2;}
+
+#lc3, #lc4{grid-column: span 3;}
+
+#lc2, #lc5{grid-column: span 4;}
+
+.live-card .date{
+    font-family: 'Barlow Condensed';
+    font-weight: 700;
+    padding: 0.5em;
+    margin-bottom: 4em;
+    width: fit-content;
+    margin: 1em;
+    background-color: var(--yellow);
+    color: var(--black);
 }
+
+.live-card .concert-content{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    flex: 1;
+}
+
+#lc1{background-image: url(images/nuit-électrique-compressed.jpg);}
+
+#lc2{background-image: url(images/session-rouge-compressed.jpg);}
+
+#lc3{background-image: url(images/nuit-électrique-compressed.jpg);}
+
+#lc4{background-image: url(images/on-remet-le-son-compressed.jpg);}
+
+#lc5{background-image: url(images/dans-la-boite-compressed.jpg);}
+
+#lc6{background-image: url(images/cordes-sensibles-compressed.jpg);}
 
 
 /*
