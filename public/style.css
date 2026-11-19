@@ -933,7 +933,7 @@ audio::-webkit-media-controls-panel{
     content: "──\00A0\00A0\00A0";
 }
 
-#values ol{
+#values ol, #formulas ol, #includes ol{
     display: flex;
     flex-direction: row;
     padding: 0;
@@ -1072,6 +1072,86 @@ audio::-webkit-media-controls-panel{
 #lives #pot-concert-6{
     height: 600px;
     width: 80%;
+}
+
+#formulas ol{
+    flex-direction: column;
+    gap: 1em;
+}
+
+#formulas li{
+    padding: 2rem;
+}
+
+#formulas li::marker{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.formula-title{
+    font-size: 4em;
+    font-weight: 600;
+
+}
+
+#formulas li::marker, #formulas .formula-title{
+    font-family: 'Barlow Condensed';
+}
+
+#formulas li .formula-intro, #formulas li .formula-description{
+    font-family: 'Space Grotesk';
+}
+
+.formula-title, .formula-intro{
+    text-transform: uppercase;
+}
+
+.formula-intro, .formula-title, .formula-description{
+    padding-inline: 5rem;
+    translate: 0 -1.4rem;
+}
+
+#formula1{
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+#formula2{
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+#formula3{
+    background-color: var(--green);
+    color: var(--black);
+}
+
+#includes{
+    display: flex;
+    justify-content: space-between;
+}
+
+#includes h3{color: var(--footer-dark-grey);}
+
+#includes ol{
+    flex: 0 0 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+    padding-left: 5em;
+    justify-items: stretch;
+}
+
+#includes li{
+    grid-column: span 1;
+    padding-block: 2em;
+    border-top: 1px solid var(--footer-light-grey); 
+    font-size: 1em;   
+    width: auto;
+}
+
+#includes li::marker{
+    color: var(--red);
 }
 
 
@@ -1215,6 +1295,21 @@ audio::-webkit-media-controls-panel{
 
     #lives #pot-second-half{
         flex: 1;
+    }
+
+    #includes{
+        flex-direction: column;
+    }
+    
+    #includes ol{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    #includes li{
+        padding-inline: 0;
+        padding-block: 1em;
     }
 }
 /*Le logo trolle, on le cache, on le redimensionnera après l'implémentation des header et footer*/
