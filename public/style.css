@@ -1035,7 +1035,8 @@ audio::-webkit-media-controls-panel{
     }
     
     #sample-content{
-        padding-block: 2em;
+        padding-block: 1em;
+        padding-inline: 2em;        
     }
 
     #sample-logo{
