@@ -700,7 +700,10 @@ section h3{
 
 #pot-concert-1,
 #pot-concert-2,
-#pot-concert-3{
+#pot-concert-3,
+#pot-concert-4,
+#pot-concert-5,
+#pot-concert-6{
     border: none;
     background-color: var(--black);
     padding: 0px;
@@ -710,7 +713,10 @@ section h3{
 
 #pot-concert-1:popover-open,
 #pot-concert-2:popover-open,
-#pot-concert-3:popover-open{
+#pot-concert-3:popover-open,
+#pot-concert-4:popover-open,
+#pot-concert-5:popover-open,
+#pot-concert-6:popover-open{
     display: flex;
 }
 
@@ -740,7 +746,10 @@ section h3{
 
 #pot-concert-1 .pot-concert-first-half,
 #pot-concert-2 .pot-concert-first-half,
-#pot-concert-3 .pot-concert-first-half{
+#pot-concert-3 .pot-concert-first-half,
+#pot-concert-4 .pot-concert-first-half,
+#pot-concert-5 .pot-concert-first-half,
+#pot-concert-6 .pot-concert-first-half{
     height: auto;
     background-size: cover;
     background-position: center;
@@ -756,6 +765,18 @@ section h3{
 
 #pot-concert-3 .pot-concert-first-half{
     background-image: url(images/session-rouge-compressed.jpg);
+}
+
+#pot-concert-4 .pot-concert-first-half{
+    background-image: url(images/on-remet-le-son-compressed.jpg);
+}
+
+#pot-concert-5 .pot-concert-first-half{
+    background-image: url(images/dans-la-boite-compressed.jpg);
+}
+
+#pot-concert-6 .pot-concert-first-half{
+    background-image: url(images/cordes-sensibles-compressed.jpg);
 }
 
 #sample-content{
@@ -955,6 +976,10 @@ audio::-webkit-media-controls-panel{
     gap: 1rem;
 }
 
+#lives h2{
+    font-size: 5em;
+}
+
 .live-card{
     display: flex;
     flex-direction: column;
@@ -967,6 +992,9 @@ audio::-webkit-media-controls-panel{
 
 .live-card:hover{
     filter: grayscale(0%);
+}
+
+.live-card:has(.concert-arrow:hover){
     scale: 1.02;
 }
 
@@ -999,17 +1027,50 @@ audio::-webkit-media-controls-panel{
     flex: 1;
 }
 
+#lives .pot-concert-first-half{
+    flex: 0 0 55%;
+    box-sizing: border-box;
+}
+
+#lives .pot-second-half{
+    flex: 0 0 45%;
+    padding: 3em;
+    box-sizing: border-box;
+}
+
+#lives .pot-second-half p{
+    margin-bottom: 1em;
+    margin-top: 0;
+    box-sizing: border-box;
+    min-width: none;
+}
+
+#lives .red-button{
+    margin-top: 2em;
+}
+
+
 #lc1{background-image: url(images/nuit-électrique-compressed.jpg);}
 
-#lc2{background-image: url(images/session-rouge-compressed.jpg);}
+#lc2{background-image: url(images/les-bernards-en-ville-compressed.jpg);}
 
-#lc3{background-image: url(images/nuit-électrique-compressed.jpg);}
+#lc3{background-image: url(images/session-rouge-compressed.jpg);}
 
 #lc4{background-image: url(images/on-remet-le-son-compressed.jpg);}
 
 #lc5{background-image: url(images/dans-la-boite-compressed.jpg);}
 
 #lc6{background-image: url(images/cordes-sensibles-compressed.jpg);}
+
+#lives #pot-concert-1,
+#lives #pot-concert-2,
+#lives #pot-concert-3,
+#lives #pot-concert-4,
+#lives #pot-concert-5,
+#lives #pot-concert-6{
+    height: 600px;
+    width: 80%;
+}
 
 
 /*
@@ -1060,13 +1121,19 @@ audio::-webkit-media-controls-panel{
 
     #pot-concert-1:popover-open,
     #pot-concert-2:popover-open,
-    #pot-concert-3:popover-open{
+    #pot-concert-3:popover-open,
+    #pot-concert-4:popover-open,
+    #pot-concert-5:popover-open,
+    #pot-concert-6:popover-open{
         flex-direction: column;
     }
 
     #pot-concert-1,
     #pot-concert-2,
-    #pot-concert-3{
+    #pot-concert-3,
+    #pot-concert-4,
+    #pot-concert-5,
+    #pot-concert-6{
         height: 600px;
     }
 
@@ -1124,7 +1191,19 @@ audio::-webkit-media-controls-panel{
         border: none;
     }
 
+    #lives{
+        display: flex;
+        flex-direction: column;
+    }
 
+    #lives #pot-concert-1,
+    #lives #pot-concert-2,
+    #lives #pot-concert-3,
+    #lives #pot-concert-4,
+    #lives #pot-concert-5,
+    #lives #pot-concert-6{
+        height: 800px;
+    }
 }
 
 /*Le logo trolle, on le cache, on le redimensionnera après l'implémentation des header et footer*/
