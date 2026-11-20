@@ -237,6 +237,28 @@ nav ul li a:hover{
     padding: 1rem;
 }
 
+.color-lines{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 70%;
+    gap: 10px;
+    top: 22%;
+    right: -8%;
+    transform: rotate(-10deg);
+}
+
+.line{
+    display: block;
+    height: 15px;
+}
+
+#pink{background-color: var(--pink);}
+#orange{background-color: var(--orange);}
+#yellow{background-color: var(--yellow);}
+#green{background-color: var(--green);}
+#blue{background-color: var(--blue);}
+
 /*
 ───────────────────────────────────────────────────────────────────────────────
     ┌──────────┐
