@@ -21,7 +21,7 @@
         </a>
 
             <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" id="burger" aria-label="Menu"></label>
+            <label for="menu-toggle" id="burger" ></label>
 
             <nav>
                 <ul>
@@ -37,7 +37,7 @@
 
     <main>
         <section id="title-section">
-            <h3>Booking &bull; Infos &bull; Café</h3>
+            <p class="kicker">Booking &bull; Infos &bull; Café</p>
 
             <h1>
                 On en <br>
@@ -71,7 +71,7 @@
                         </label>
 
                         <label id="event-type">Type d'évènement<br>
-                            <select name="formula" id="">
+                            <select name="formula">
                                 <option value="private-concert" selected="selected">
                                     Concert privé
                                 </option>
@@ -92,13 +92,13 @@
                             <textarea required name="message" rows="5" placeholder="La date, le lieu, l'ambiance imaginée..."></textarea>
                         </label>
                         <div id="data-acceptation">
-                            <input type="checkbox" name="data-acceptation" required>
+                            <input type="checkbox" name="data-accept" id="data-accept" required>
 
-                            <label for="data-acceptation">
+                            <label for="data-accept">
                                 J'accepte que mes données soient utilisées pour répondre à ma demande.
                             </label>
                         </div>
-                        <input id="send-button" class="red-button" type="submit" value="Envoyer la demande &nbsp;&nbsp;&nbsp;&rarr;"></input>
+                        <input id="send-button" class="red-button" type="submit" value="Envoyer la demande &nbsp;&nbsp;&nbsp;&rarr;">
                     </fieldset>
                 </form>
             </section>
