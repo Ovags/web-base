@@ -1479,6 +1479,10 @@ fieldset .red-button{
         padding-block: 1em;
     }
 
+    form :is(#name, #mail, #phone, #event-type){
+     grid-column: span 2;
+}
+
     #contact-super-section{
         display: flex;
         flex-direction: column;
