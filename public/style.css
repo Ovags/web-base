@@ -88,6 +88,7 @@ ul li{
     margin-left: auto;
     border: solid 1px var(--red);
     white-space: nowrap;
+    width: fit-content;
 }
 
 .transparent-button, .transparent-button a:visited{
@@ -335,7 +336,7 @@ footer em{
 
 #legal-mentions{
     border-top: 1px solid var(--footer-dark-grey);
-    color: var(--footer-dark-grey);
+    color: var(--footer-light-grey);
     padding-left: 3em;
     padding-right: 3em;
     font-size: 0.7em;
@@ -1168,8 +1169,18 @@ audio::-webkit-media-controls-panel{
     color: var(--red);
 }
 
+#contact-super-section{
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-bottom: 5em;
+}
+
+#contact-super-section section{
+    padding-top: 0;
+}
+
 #services-contact{
-    background-color: var(--footer-bg-color);
     margin-inline: 5vw;
     margin-bottom: 5em;
     padding-inline: 4em;
@@ -1180,6 +1191,136 @@ audio::-webkit-media-controls-panel{
     font-size: 4em;
 }
 
+#form-section{
+    background-color: var(--black);
+    color: var(--white);
+    grid-column: span 2;
+}
+
+#contact-informations{
+    grid-column: span 1;
+    color: var(--white);
+    border-left: 1px solid var(--footer-dark-grey);
+    background-color: var(--black);
+}
+
+legend{
+    text-transform: uppercase;
+    color: var(--yellow);
+    font-weight: 400;
+    padding: 1em;
+}
+
+fieldset{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    border-color: var(--footer-dark-grey);
+    border-width: 1px;
+}
+
+form :is(#name, #mail, #phone, #event-type){
+     grid-column: span 1;
+}
+
+form :is(#message, #data-acceptation){
+    grid-column: span 2;
+    border: none;
+}
+
+input, select, textarea{
+    margin-top: 1em;
+    display: block;
+    width: 100%;
+    height: 4em;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Space Grotesk';
+    font-weight: 500;
+    border: none;
+}
+
+label{
+    border-bottom: 1px solid var(--footer-dark-grey);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+textarea{
+    height: 8em;
+    border-bottom: 1px solid var(--footer-dark-grey);
+}
+
+#data-acceptation{
+    display: flex;
+    align-items: center;
+}
+
+#data-acceptation input{
+    height: 1.3em;
+    width: 1.3em;
+    accent-color: var(--pink);
+    margin: 0;
+    margin-right: 0.5em;
+}
+
+#data-acceptation label{
+    border: none;
+    font-weight: 200;
+    color: var(--footer-light-grey);
+    text-transform: none;
+    font-size: 0.8em;
+}
+
+fieldset .red-button{
+    margin-left: 0;
+}
+
+#contact-informations h2{
+    font-size: 3em;
+    font-weight: 500;
+}
+
+#contact-informations :is(a, a:visited){
+    text-decoration: none;
+}
+
+#contact-informations .field-details small{
+    text-transform: uppercase;
+    color: var(--footer-light-grey);
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+#contact-informations .field-details p{
+    color: var(--white);
+}
+
+#contact-informations img{
+    height: auto;
+    width: 100%;
+}
+
+.contact-fields{
+    display: flex;
+    gap: 1em;
+    margin-block: 1em;
+}
+
+.field-details{
+    width: 100%;
+}
+
+.field-details p{
+    margin-block: 0.5em;
+}
+
+.contact-fields svg{
+    height: 1.5em;
+    color: var(--yellow);
+    min-width: 1.5em;
+}
 
 /*
 ───────────────────────────────────────────────────────────────────────────────
@@ -1336,6 +1477,11 @@ audio::-webkit-media-controls-panel{
     #includes li{
         padding-inline: 0;
         padding-block: 1em;
+    }
+
+    #contact-super-section{
+        display: flex;
+        flex-direction: column;
     }
 }
 /*Le logo trolle, on le cache, on le redimensionnera après l'implémentation des header et footer*/
