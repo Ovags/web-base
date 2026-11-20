@@ -140,14 +140,16 @@ ul li{
 a:hover,
 .pot-close-button:hover, 
 .transparent-on-white-button:hover, 
-.transparent-on-black-button:hover{
+.transparent-on-black-button:hover,
+li.button:has(.concert-arrow:hover){
     scale: 1.05;
 }
 
 a,
-.pot-close-button:hover, 
+.pot-close-button, 
 .transparent-on-white-button, 
-.transparent-on-black-button{
+.transparent-on-black-button,
+li.button{
     transition: scale 0.2s ease;
 }
 /*
@@ -750,6 +752,12 @@ section :is(h3, kicker){
     cursor: pointer;
 }
 
+li .concert-arrow{
+    width: 6em;
+    height: 6em;
+    translate: 0 -65px;
+}
+
 #concert1 .concert-content,
 #concert3 .concert-content,
 #concert2 .concert-content{
@@ -1212,6 +1220,11 @@ audio::-webkit-media-controls-panel{
 #formula3{
     background-color: var(--green);
     color: var(--black);
+}
+
+#formula3 .concert-arrow{
+    color: var(--black);
+    border-color: var(--black);
 }
 
 #includes{
