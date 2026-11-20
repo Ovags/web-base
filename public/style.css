@@ -173,11 +173,22 @@ header h2{
     font-size: 1.2em;
 }
 
+header :is(a:visited, a){
+    text-decoration: none;
+    color: var(--black);
+}
+
 header nav ul{
     display: flex;
     gap: 15px;
     padding: 0 1rem 0 1rem;
     margin: 0;
+}
+
+#logo-title{
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
 #logo-title img{
