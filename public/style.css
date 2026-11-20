@@ -572,7 +572,7 @@ section h3{
 
 #c1{    
     box-shadow: 8px 8px 5px var(--footer-dark-grey);
-    animation: tourne 3s linear infinite paused;
+    animation: tourne 2s linear infinite paused;
 }
 
 #c1:hover{    
