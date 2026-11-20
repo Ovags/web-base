@@ -1227,6 +1227,21 @@ audio::-webkit-media-controls-panel{
     border-color: var(--black);
 }
 
+.pot-formula{
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    padding: 1em;
+    box-shadow: 0 0 12px var(--white);
+}
+
+.pot-formula ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2em;
+    padding: 0;
+}
+
 #includes{
     display: flex;
     justify-content: space-between;
