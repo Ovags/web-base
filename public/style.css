@@ -279,6 +279,10 @@ nav ul li a:hover{
 
     nav ul li{
         padding: 0.5rem;
+    }    
+
+    header nav li :is(a:visited, a:hover, a){
+        color: var(--white);
     }
 
     #this-page{        
