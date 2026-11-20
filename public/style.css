@@ -453,6 +453,10 @@ section h3{
     padding-bottom: 0;
 }
 
+#title-section-main p{
+    max-width: 500px;
+}
+
 #title-section{
     align-items: flex-start;
     background-color: var(--black);
@@ -470,6 +474,7 @@ section h3{
     font-weight: 100;
     margin-top: 1em;
     margin-bottom: 0;
+    max-width: 500px;
 }
 
 #title-section h3::before, #title-section-main h3::before{
@@ -557,8 +562,8 @@ section h3{
 #vinyl-center{
     background-color: var(--footer-light-grey);
     color: var(--white);
-    width: 65px;
-    height: 65px;
+    width: 80px;
+    height: 80px;
     text-align: center;
     font-family: 'Barlow Condensed';
     font-weight: 900;
@@ -567,8 +572,8 @@ section h3{
 }
 
 #vinyl-center img{
-    height: 65px;
-    width: 65px;
+    height: 80px;
+    width: 80px;
 }
 
 #gallery{
@@ -933,6 +938,15 @@ audio::-webkit-media-controls-panel{
     content: "──\00A0\00A0\00A0";
 }
 
+.services#title-section{
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#titles{
+    flex: 0 0 66%;
+}
+
 #values ol, #formulas ol, #includes ol{
     display: flex;
     flex-direction: row;
@@ -1152,6 +1166,18 @@ audio::-webkit-media-controls-panel{
 
 #includes li::marker{
     color: var(--red);
+}
+
+#services-contact{
+    background-color: var(--footer-bg-color);
+    margin-inline: 5vw;
+    margin-bottom: 5em;
+    padding-inline: 4em;
+}
+
+#services-contact h2{
+    color: var(--white);
+    font-size: 4em;
 }
 
 
