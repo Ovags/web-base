@@ -510,6 +510,7 @@ section :is(h3, kicker){
     background-repeat: no-repeat;
     padding-top: 0;
     padding-bottom: 0;
+    overflow: clip;
 }
 
 #title-section-main p{
