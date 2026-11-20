@@ -1184,6 +1184,7 @@ audio::-webkit-media-controls-panel{
     margin-inline: 5vw;
     margin-bottom: 5em;
     padding-inline: 4em;
+    background-color: var(--footer-bg-color);
 }
 
 #services-contact h2{
