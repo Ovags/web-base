@@ -374,6 +374,23 @@ footer div ul{
     text-decoration: none;
 }
 
+.pot-legal{
+    max-height: 95dvh;
+    overflow-y: auto;
+}
+
+.pot-legal :is(a, a:visited){
+    color: var(--red);
+}
+
+footer button{
+    font-family: 'Space Grotesk';
+    background-color: var(--footer-bg-color);
+    color: var(--footer-light-grey);
+    border: none;
+    font-size: 1em;
+}
+
 /*
 ───────────────────────────────────────────────────────────────────────────────
     ┌──────────┐
@@ -760,6 +777,9 @@ section h3{
 }
 
 .pot-close-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--red);
     color: var(--white);
     font-family: 'Space Grotesk';
