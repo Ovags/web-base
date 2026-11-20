@@ -542,9 +542,13 @@ section h3{
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
+    margin-bottom: 2em;
+    animation: tourne 8s linear infinite;
+}
+
+#vinyl-container{
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2em;
 }
 
 @keyframes tourne {
@@ -568,7 +572,12 @@ section h3{
 
 #c1{    
     box-shadow: 8px 8px 5px var(--footer-dark-grey);
-    animation: tourne 8s linear infinite;
+    animation: tourne 3s linear infinite paused;
+}
+
+#c1:hover{    
+    box-shadow: 8px 8px 5px var(--footer-dark-grey);
+    animation-play-state: running;
 }
 
 #vinyl-center{
