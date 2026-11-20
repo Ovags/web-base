@@ -246,6 +246,7 @@ nav ul li a:hover{
     top: 22%;
     right: -8%;
     transform: rotate(-10deg);
+    z-index: 10;
 }
 
 .line{
@@ -472,6 +473,7 @@ h1{
     line-height: 0.72;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
+    z-index: 100;
 }
 
 h2{
