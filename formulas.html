@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <title>Formules</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div id="logo-title">
+                <img src="images/logo.svg" alt="logo de JEAN-JACQUES & LES BERNARDS" id="header-logo">
+            <h2>JEAN-JACQUES <br> 
+                & LES BERNARDS</h2>
+            </div>
+        </a>
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="burger" ></label>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">Le groupe</a></li>
+                    <li><a href="gallery.html">Concerts</a></li>
+                    <li id="this-page"><a href="services.html">Prestations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="book-us"><a href="contact.html">Nous programmer</a></li>
+                </ul>
+            </nav>    
+    </header>
+
+    <main>
+        <section class="services" id="title-section" >
+            <div id="titles">
+                <p class="kicker">À chaque lieu sa formule</p>
+                <h1>
+                    Nos <br>
+                    <em>formules.</em>
+                </h1>
+            </div>
+
+            <p id="subtitle">Trois formats, un même engagement : faire de votre évènement un moment dont on reparlera.</p>
+        </section>
+
+        <section id="formules">
+            <ol>
+                <div class="cont">
+                    <input type="radio" name="theme" id="t1"></input> <label for="t1">
+                        <li id="formula1" class="button">
+                            <legend class="chosen">Choisi</legend>
+                            <div class="formula-container">
+                                <div class="formula-intro">Entreprises &bull; anniversaires &bull; soirées privées</div>
+                    
+                                <div class="formula-title">Concert privé</div>
+                                <div class="formula-description">Un set généreux, vivant et calibré pour votre publie. De 60 à 120 minutes, sans temps mort.</div>
+                            </div>
+                        </li>
+                    </label>
+                </div>
+
+                <div class="cont">
+                    <input type="radio" name="theme" id="t2"></input> <label for="t2">
+                        <li id="formula2" class="button">
+                            <legend class="chosen">Choisi</legend>
+                            <legend class="recommended">Recommandé</legend>
+                            <div class="formula-intro">Festivals &bull; salles &bull; évènements publics</div>
+                    
+                            <div class="formula-title">Festival & scène</div>
+                    
+                            <div class="formula-description">Une formule amplifiée, une présence scénique franche et une fiche technique qui va droit au but.</div>
+                        </li>
+                    </label>
+                </div>
+
+                <div class="cont">
+                    <input type="radio" name="theme" id="t3"></input> <label for="t3">
+                        <li id="formula3" class="button">
+                            <legend class="chosen">Choisi</legend>
+                            <div class="formula-intro">Cocktails &bull; vernissages &bull; petites jauges</div>
+                    
+                            <div class="formula-title">Set acoustique</div>
+                    
+                            <div class="formula-description">Les mêmes chansons, au plus près. Deux guitares, quelques voix et juste ce qu'il faut de percussions.</div>
+                        </li>
+                    </label>
+                </div>
+
+            </ol>
+
+        </section>
+
+        <section id="includes">
+            <p class="kicker">Toujours inclus</p>
+
+            <ol>
+                <li>Echange technique en amont</li>
+
+                <li>Set adapté à votre évènement</li>
+
+                <li>Sonorisation sur demande</li>
+
+                <li>Une énergie sans supplément</li>
+            </ol>
+        </section>
+
+        <section id="services-contact">
+            <h2>
+                Une idée en tête ?<br>
+                <em>Faisons du bruit.</em>
+            </h2>
+
+            <div class="color-lines">
+                <div class="line" id="pink"></div>
+                <div class="line" id="orange"></div>
+                <div class="line" id="yellow"></div>
+                <div class="line" id="green"></div> 
+                <div class="line" id="blue"></div>
+            </div>
+            
+            <a href="contact.html" class="red-button">Parlons de votre projet &rarr;</a>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-contact">
+            <img src="images/logo-epurated-transparent.svg" alt="Logo de Jean-Jacques & Les Bernards" id="footer-logo">
+
+            <h2>
+                Le prochain refrain<br>
+                Commence <em>ici.</em>
+            </h2>
+
+            <a href="contact.html" class="red-button">Nous programmer &nbsp;&nbsp;&nbsp;&nbsp; &rarr;</a>
+        </div>
+
+        <div id="legal-mentions">
+            <ul>
+                <li>&copy; 2026 Gilles Gobeaux</li>
+                <li>Rue Bignolle 42, 5020 Champion</li>
+            </ul>
+            <ul id="links">
+                <li>
+                    <button popovertarget="pot-privacy" popovertargetaction="toggle">
+                        Vie privée
+                    </button>
+                </li>
+                <li>
+                    <button popovertarget="pot-legal-mentions" popovertargetaction="toggle">
+                        Mentions légales
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div id="pot-privacy" class="pot-legal" popover="">
+            <div class="test"><button class="pot-close-button" popovertarget="pot-privacy" popovertargetaction="hide">X</button></div>
+            
+            <div class="pot-second-half">
+                <h3>Dernière mise à jour : 20/11/26</h3>
+                
+                <h2>Vie privée</h2>
+                
+                <h3>Responsable du traitement</h3>
+
+                <p>
+                    Gilles Gobeaux, pour le groupe Jean-Jacques & les Bernards <br> 
+                Rue Monplaisir 13, 7972 Ellignies Ste Anne – Gilles.Gobeaux@gmail.com – +32493578917
+                </p>
+
+                <h3>Données collectées</h3>
+
+                <p>
+                    Via le formulaire de contact : nom, adresse e-mail, numéro de téléphone (facultatif), type d'évènement et contenu du message. <br>
+                    Via un e-mail ou un appel direct : les données que vous choisissez de nous transmettre.
+                </p>
+
+                <h3>Finalité</h3>
+
+                <p>
+                    Ces données servent uniquement à répondre à votre demande et, le cas échéant, à préparer une offre et organiser la prestation. Elles ne sont jamais vendues, louées ni utilisées à des fins publicitaires.
+                </p>
+
+                <h3>Base légale</h3>
+
+                <p>
+                    Le traitement est nécessaire à l'exécution de mesures précontractuelles prises à votre demande (article 6.1.b du RGPD). Si une prestation est conclue, certaines données sont conservées pour respecter nos obligations comptables et fiscales (article 6.1.c).
+                </p>
+
+                <h3>Destinataires</h3>
+
+                <p>
+                    Les membres du groupe chargés du booking, ainsi que nos prestataires techniques : Guyteub pages et Formspree (parce que pourquoi pas ?). <br>
+                    Ces prestataires agissent uniquement sur nos instructions.
+                </p>
+
+                <h3>Durée de conservation</h3>
+
+                <p>
+                    Sans suite donnée à votre demande : 6 mois après notre dernier échange. <br>
+                    Si une prestation est conclue : pendant la durée imposée par la législation comptable et fiscale pour les documents liés à la facturation.
+                </p>
+
+                <h3>Vos droits</h3>
+
+                <p>
+                    Vous pouvez demander l'accès à vos données, leur rectification, leur effacement, la limitation du traitement, vous y opposer ou demander leur portabilité, en écrivant à <a href="mailto:RogerJacule@gmail.com">RogerJacule@gmail.com</a>. Nous répondons dans un délai d'un mois (ou pas). <br>
+                    Vous pouvez également introduire une plainte auprès de l'Autorité de protection des données : <a href="http://www.autoriteprotectiondonnees.be">www.autoriteprotectiondonnees.be</a>.
+                </p>
+
+                <h3>Cookies</h3>
+
+                <p>
+                    Ce site n'utilise aucun cookie de suivi, de statistiques ou de publicité.
+                </p>
+            </div>
+        </div>
+        <div id="pot-legal-mentions" class="pot-legal" popover="">
+            <div class="test"><button class="pot-close-button" popovertarget="pot-legal-mentions" popovertargetaction="hide">X</button></div>
+            
+            <div class="pot-second-half">
+                <h3>Dernière mise à jour : 20/11/26</h3>
+                
+                <h2>Mentions légales</h2>
+
+                <h3>Éditeur du site</h3>
+
+                <p>
+                    Gilles Gobeaux, pour le groupe Jean-Jacques & les Bernards (association de fait) <br>
+                    Rue Monplaisir 13, 7972 Ellignies Ste Anne <br>
+                    E-mail : Gilles.Gobeaux@gmail.com – Téléphone : +32493578917
+                </p>
+
+                <h3>Responsable de la publication</h3>
+
+                <p>Gilles Gobeaux</p>
+
+                <h3>Hébergement</h3>
+                
+                <p>Guyteub Pages</p>
+
+                <h3>Réalisation</h3>
+                
+                <p>Conception et développement : Gilles Gobeaux</p>
+
+                <h3>Propriété intellectuelle</h3>
+
+                <p>
+                    Les textes, photographies, logos et éléments graphiques de ce site appartiennent au groupe Jean-Jacques & les Bernards ou à Figma. Toute reproduction sans autorisation préalable est interdite. <br>
+                    Les morceaux interprétés sont des reprises : les droits sur les œuvres originales appartiennent à leurs auteurs, compositeurs et éditeurs.
+                </p>
+
+                <h3>Responsabilité</h3>
+
+                <p>
+                    Les informations de ce site (dates, formules, contenu des prestations) sont données à titre indicatif et peuvent être modifiées. Les liens vers des sites externes n'engagent pas la responsabilité de l'éditeur.
+                </p>
+
+                <h3>Droit applicable</h3>
+
+                <p>
+                    Ce site est soumis au droit belge.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
