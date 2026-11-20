@@ -137,13 +137,15 @@ ul li{
     white-space: nowrap;
 }
 
-a:hover, 
+a:hover,
+.pot-close-button:hover, 
 .transparent-on-white-button:hover, 
 .transparent-on-black-button:hover{
     scale: 1.05;
 }
 
-a, 
+a,
+.pot-close-button:hover, 
 .transparent-on-white-button, 
 .transparent-on-black-button{
     transition: scale 0.2s ease;
